@@ -1,0 +1,147 @@
+// Sequencing loading state
+
+.title path, .title_secondary, .essay_content, .essay_line {
+  opacity: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  // filter: grayscale(100%);
+  margin-top: -10px;
+}
+
+.essay {
+  margin-top: 10vw;
+  margin-left: 5vw;
+}
+
+@media breakpointLg {
+  .essay {
+    margin: 0;
+  }
+}
+
+.essay_content {
+  margin: 5vw;
+}
+
+@media breakpointLg {
+  .essay_content {
+    margin: 10vw;
+    width: 45vw;
+    margin-left: 45vw;
+  }
+}
+
+.essay p {
+  margin-bottom: 1.5em;
+}
+
+.essay_line {
+  width: 1px;
+  background: color-red;
+  height: 0px;
+  transition: height 1500ms ease-out;
+  transition-delay: 3500ms;
+  margin-left: calc(0vw - 1px);
+  position: fixed;
+  z-index: 999;
+}
+
+.essay_line.active {
+  height: 100vh;
+}
+
+@media breakpointLg {
+  .essay_line {
+    position: fixed;
+    margin-left: calc(35vw - 1px);
+  }
+}
+
+.title {
+  margin: 5vw;
+}
+
+@media breakpointLg {
+  .title {
+    margin: 10vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.title_secondary {
+  margin: 10vw 5vw;
+}
+
+@media breakpointLg {
+  .title_secondary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10vw;
+  }
+}
+
+.baldwin {
+  margin-top: calc(10vw - 2.4rem);
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: -10vw;
+}
+
+@media breakpointLg {
+  .baldwin {
+    margin-left: -10vw;
+    margin-top: calc(10vw - 2.4rem);
+    width: 65vw;
+    max-width: 100vw;
+  }
+}
+
+.trailer_wrapper {
+  width: 100vw;
+  margin-left: -10vw;
+  margin-top: calc(10vw - 2.4rem);
+  margin-bottom: calc(10vw - 2.4rem);
+}
+
+@media breakpointLg {
+  .trailer_wrapper {
+    width: 65vw;
+  }
+}
+
+.trailer {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.trailer iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

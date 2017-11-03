@@ -1,0 +1,58 @@
+---
+title: On Being White ...and other lies
+description: An essay written by James Baldwin
+timezone: UTC
+markdown: kramdown
+url: https://onbeingwhite.com
+github_username: jeremypbeasley
+permalink: pretty
+collections:
+  blog:
+    title: Blog
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: default
+- scope:
+    path: ''
+    type: blogs
+  values:
+    permalink: "/blog/:title/"
+    layout: blog
+    author:
+exclude:
+- Gemfile.lock
+- Gemfile
+- Gruntfile.js
+- node_modules
+- package.json
+- README.md
+gems:
+- jekyll-assets
+assets:
+  cache: false
+  autowrite: true
+  prefix: "/assets"
+  digest: false
+  assets:
+  - "*.png"
+  - "*.jpg"
+  - "*.svg"
+  - "*.otf"
+  - "*.ttf"
+  - "*.woff"
+  - "*.woff2"
+  - "*.eot"
+  - master.css
+  - master.js
+  sources:
+  - _assets/
+  - _assets/_img
+  - _assets/_fonts
+  - _assets/_favicon

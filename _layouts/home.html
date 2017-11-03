@@ -1,0 +1,41 @@
+{% include header.html %}
+
+<div class="title">
+	<svg width="190" height="365" viewBox="0 0 190 365" xmlns="http://www.w3.org/2000/svg">
+	  <g fill="#ff3700" fill-rule="evenodd">
+	    <path class="on" d="M26.888.92l7.222 7.22V108.78L26.888 116H8.362l-7.222-7.222V8.14L8.362.92h18.526zm-7.222 101.42V14.58h-4.082v87.763h4.082zM73.988.92H59.544v28.416L54.834.92H40.39V116h14.444V86.955L59.544 116h14.444V.92z"/>
+	    <path class="being" d="M34.11 174.06l-3.925 5.338 3.925 4.867v48.513L26.888 240H1.14V124.92h25.748l7.222 7.22v41.92zm-14.444-1.884v-33.598h-4.082v33.598h4.082zm0 54.165v-39.877h-4.082v39.878h4.082zM40.39 124.92V240h26.062v-13.66H54.834v-40.505h11.618v-13.66H54.834V138.58h11.618v-13.66H40.39zm46 115.08V124.92H71.948V240H86.39zm39.88-115.08h-14.445v28.416l-4.71-28.417H92.67V240h14.445v-29.045l4.71 29.045h14.444V124.92zm39.25 56.52h-16.486v13.658h2.04v31.243h-4.08V138.58h4.08v27.16h14.445v-33.597l-7.223-7.22H139.77l-7.22 7.22V232.78l7.22 7.222h18.527l7.222-7.222v-51.34z"/>
+	    <path class="white" d="M38.035 249.92H25.16l-5.337 72.69-5.18-72.69H.197L10.088 365h16.643l4.24-54.636L35.052 365h16.642l10.048-115.08H48.554l-5.338 72.69-5.18-72.69zm48.2 0v47.256h-4.71V249.92H67.08V365h14.444v-54.165h4.71V365h14.444V249.92H86.234zM121.4 365V249.92h-14.444V365h14.444zm4.71-115.08v13.658h9.106V365h14.444V263.578h9.42v-13.66h-32.97zm37.68 0V365h26.062v-13.66h-11.618v-40.505h11.618v-13.66h-11.618V263.58h11.618v-13.66h-26.062z"/>
+	  </g>
+	</svg>
+</div>
+<div class="title_secondary"><p>{{ page.title_secondary }}</p></div>
+<div class="essay">
+	<div class="essay_line"></div>
+	<div class="essay_content">
+		<p>An essay by James Baldwin<br>Originally published by Essence Magazine, April 1984</p>
+		<p>—</p>
+		{{ page.content | markdownify }}
+		<img class="baldwin" src="/assets/_img/baldwin.jpg"/>
+	</div>
+	<div class="essay_content">
+		<p><b>James Arthur "Jimmy" Baldwin</b> (August 2, 1924 – December 1, 1987) was an American writer and <a href="https://en.wikipedia.org/wiki/Social_critic" class="mw-redirect" title="Social critic">social critic</a>. His essays, as collected in <i><a href="https://en.wikipedia.org/wiki/Notes_of_a_Native_Son" title="Notes of a Native Son">Notes of a Native Son</a></i> (1955), explore palpable yet unspoken intricacies of <a href="https://en.wikipedia.org/wiki/Racism" title="Racism">racial</a>, <a href="https://en.wikipedia.org/wiki/Human_sexuality" title="Human sexuality">sexual</a>, and class distinctions in Western societies, most notably in mid-20th-century America.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"></a></sup> Some of Baldwin's essays are book-length, for instance <i><a href="https://en.wikipedia.orghttps://en.wikipedia.org/wiki/The_Fire_Next_Time" title="The Fire Next Time">The Fire Next Time</a></i> (1963), <i><a href="https://en.wikipedia.org/wiki/No_Name_in_the_Street" title="No Name in the Street">No Name in the Street</a></i> (1972), and <i><a href="https://en.wikipedia.org/wiki/The_Devil_Finds_Work" title="The Devil Finds Work">The Devil Finds Work</a></i> (1976). An unfinished manuscript, <i><a href="https://en.wikipedia.org/wiki/Remember_This_House" title="Remember This House">Remember This House</a></i>, was expanded upon and adapted for cinema as the <a href="https://en.wikipedia.org/wiki/Academy_Award" class="mw-redirect" title="Academy Award">Academy Award</a>-nominated documentary film <i><a href="https://en.wikipedia.org/wiki/I_Am_Not_Your_Negro" title="I Am Not Your Negro">I Am Not Your Negro</a></i>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"></a></sup></p>
+		<p>
+			More on <a href="https://en.wikipedia.org/wiki/James_Baldwin" target="_blank">Wikipedia</a>
+		</p>
+		<div class="trailer_wrapper">
+			<div class="trailer">
+				<iframe src="https://www.youtube.com/embed/nAmL3F5uylo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<p>—</p>
+		<p>
+			Typefaces by Matt Wiley (<a href="http://mattwilley.co.uk/filter/Type/Timmons-Typeface" target="_blank">Timmons NY</a>) and Kris Sowersby (<a href="https://klim.co.nz/retail-fonts/tiempos-text/" target="_blank">Tiempos Text</a>)
+		</p>
+		<p>
+			Design & code by <a href="http://twitter.com/jeremypbeasley" target="_blank">@jeremypbeasley</a>
+		</p>
+	</div>
+</div>
+
+{% include footer.html %}
